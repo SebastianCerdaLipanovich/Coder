@@ -1,0 +1,202 @@
+@import "colores";
+@import "tamanios";
+
+/*map-get*/
+$estilos: (
+  border-style: none,
+  width: fit-content,
+  margin: 4rem,
+  border-collapse: unset,
+);
+
+table {border-style: map-get($estilos, border-style); width: map-get($estilos, width); margin: map-get($estilos, margin); border-collapse: map-get($estilos, border-collapse)}
+.container-fluid{padding-left:0; padding-right:0;width:100%}
+button{padding-left:0; padding-right:0;}
+.logo {height: 3rem;}
+footer{width: 100%; height:3rem; text-align:right; position: sticky; background-color:$color-fondo;bottom:0px; color:white}
+section{padding-top: 5rem; padding-bottom: 3rem;}
+.footer__social-icons--size{width: 2.5rem; transition: transform .2s;}
+.footer__social-icons--size:hover{transform: scale(1.5)}
+.footer__social-icons--padding{padding-right: .5rem;padding-left: .5rem;padding-top: .5rem;}
+.noticia__titulo--tamanio{font-size: 1.5rem;}
+.noticia__titulo--color{color: black}
+.noticia__texto--tamanio{font-size: 1.25rem;}
+.noticia__texto--color{color: black}
+.row__col--itemscentrados{text-align: -webkit-center;}
+.section__videoFrame--centrado{text-align: center;}
+/*tabla de turno croata*/
+#croataTable {margin-top: 1rem; margin-left: 2rem; padding: 3rem; border-right: solid 0.5rem grey; border-bottom: solid 0.5rem grey; border-radius: 50%; transition: transform .2s;}
+#croataTable:hover {border-left: solid 0.5rem grey; border-top: solid 0.5rem grey; border-right: none; border-bottom: none; border-radius: 50%;}
+/*tabla de partidas*/ 
+#nacimientoTable {margin-top: 1rem; margin-right: 2rem; padding: 3rem; border-left: solid 0.5rem grey; border-bottom: solid 0.5rem grey; border-radius: 50%;}
+#nacimientoTable:hover {border-left: none; border-top: solid 0.5rem grey; border-right: solid 0.5rem grey; border-bottom: none; border-radius: 50%;}
+/*headers de tablas */
+th {border-radius: 5px; border-color: grey; border-style: dotted; text-align: center; text-decoration: underline;}
+/*celdas de tablas */
+td { border-radius: 5px; border-color: grey; border-style: dotted; text-align: center;}
+/*lista ordenada dentro de tablas*/
+td ol { list-style: none; text-align: left;}
+nav ul li a {font-size: 1rem; text-align: center; position: relative; transition: transform .2s;}
+nav ul li a:hover {transform: scale(1.5);}
+.dropdown-item {text-align: center;}
+.navbar-expand-lg .navbar-nav .nav-link {padding-right: 1rem; padding-left: 1rem; }
+/* reseting
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+body{ 
+  min-height: 100vh; 
+  margin: 0; 
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+      "header"
+      "section"
+      "footer";
+}
+header{ 
+  min-height:50px;
+}
+/*Estilo para el footer, presente en todos los archivos html
+
+
+/*estilo para mobile
+@media only screen and (min-width: 0px) and (max-width:767px){
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "section"
+      "footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+  }
+}
+/*estilo para tablet
+@media only screen and (min-width: 768px) and (max-width:1024px){
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "parrafo1 parrafo2 parrafo3"
+      "footer footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+
+/*estilo para desktop
+@media only screen and (min-width: 1025px){
+  .grid {
+    display: grid;
+    grid-template-areas: "parrafo1 parrafo2 parrafo3";
+  }
+
+}  
+/*Estilo para el nav, presente en todos los archivos html 
+
+/*barra de navegacion
+nav ul {
+  width: 100%; /*ocupa toda la ventana
+  background-image: linear-gradient(to bottom, black, grey ); /*fondo negro
+  height: 4rem; /*altura del nav
+  display: flex; /*me permite utilizar el align-items
+  align-items: center; /*me permite centrar verticalmente los li items
+  list-style: none;
+}
+/*css para la imagen logo 
+
+/*csss para los elementos de lista 
+
+/*csss para los anchor items 
+nav ul li a {
+  text-decoration: none; /*le saco el decoration de los links 
+  color: white; /*color blanco, para contrastar con el fondo negro 
+}
+
+/*csss para el submenu 
+ul li ul {
+  position: absolute;
+  display: none;
+}
+ul li:hover ul {
+  display: grid;
+}
+/*csss para los elementos de lista del submenu 
+ul ul li {
+  display: block;
+  width: auto;
+}
+
+/*Estilo para el Section, presente en todos los archivos html 
+section {
+  padding-bottom: 4rem; /* espacio libre para el footer 
+  display: block;
+  min-height: 100vh; /*para que ocupe siempre toda la paguina 
+}
+
+/*A partir de aqui estilos que se usan solo en algunos html 
+/*html de SERVICIOS 
+.flex-padre {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/*contacto 
+input {
+  border-color: grey;
+  border-style: dotted;
+  border-width: 0.1px;
+}
+
+textarea {
+  border-color: grey;
+  border-style: dotted;
+}
+
+
+/*blog 
+.videoFrame {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  align-content: center;
+}
+
+iframe {
+  width: auto;
+}
+
+article {
+  text-align: center;
+}
+
+/*nosotros 
+.autor {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.descripcion-autor {
+  display: flex;
+  text-align: left;
+  margin-left: 1rem;
+  align-self: start;
+  flex-direction: column;
+  white-space: pre-wrap;
+  width: 60%;
+}
+.descripcion-autor h3 {
+  align-self: start;
+}
+*/

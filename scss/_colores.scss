@@ -1,0 +1,7 @@
+$color-fondo:rgb(52, 58, 64);
+
+@each $color in blue, yellow, black, white{
+	#{$color}{
+	color:#{$color};
+	}
+}
