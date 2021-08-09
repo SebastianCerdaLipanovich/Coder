@@ -7564,19 +7564,18 @@ textarea {
 }
 
 
-/*blog 
+*/
 .videoFrame {
   text-align: center;
   display: flex;
   flex-flow: column wrap;
   overflow: hidden;
-  align-content: center;
-}
+  align-content: center; }
 
 iframe {
-  width: auto;
-}
+  width: auto; }
 
+/*
 article {
   text-align: center;
 }
