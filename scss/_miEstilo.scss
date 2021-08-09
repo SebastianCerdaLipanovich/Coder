@@ -24,12 +24,7 @@ section{padding-top: 5rem; padding-bottom: 3rem;}
 .noticia__texto--color{color: black}
 .row__col--itemscentrados{text-align: -webkit-center;}
 .section__videoFrame--centrado{text-align: center;}
-/*tabla de turno croata*/
-#croataTable {margin-top: 1rem; margin-left: 2rem; padding: 3rem; border-right: solid 0.5rem grey; border-bottom: solid 0.5rem grey; border-radius: 50%; transition: transform .2s;}
-#croataTable:hover {border-left: solid 0.5rem grey; border-top: solid 0.5rem grey; border-right: none; border-bottom: none; border-radius: 50%;}
-/*tabla de partidas*/ 
-#nacimientoTable {margin-top: 1rem; margin-right: 2rem; padding: 3rem; border-left: solid 0.5rem grey; border-bottom: solid 0.5rem grey; border-radius: 50%;}
-#nacimientoTable:hover {border-left: none; border-top: solid 0.5rem grey; border-right: solid 0.5rem grey; border-bottom: none; border-radius: 50%;}
+table {margin-top: 1rem; margin-left: 2rem; padding: 3rem; }
 /*headers de tablas */
 th {border-radius: 5px; border-color: grey; border-style: dotted; text-align: center; text-decoration: underline;}
 /*celdas de tablas */
