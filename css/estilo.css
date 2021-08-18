@@ -7350,7 +7350,7 @@ section {
 .footer__social-icons--size:hover {
   transform: scale(1.5); }
 
-.footer__social-icons--padding {
+.footer--padding {
   padding-right: .5rem;
   padding-left: .5rem;
   padding-top: .5rem; }
