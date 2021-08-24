@@ -2,39 +2,194 @@
 @import "tamanios";
 
 /*map-get*/
-$estilos: (
-  border-style: none,
+$estilos: (border-style: none,
   width: fit-content,
   margin: 4rem,
   border-collapse: unset,
 );
 
-table {border-style: map-get($estilos, border-style); width: map-get($estilos, width); margin: map-get($estilos, margin); border-collapse: map-get($estilos, border-collapse)}
-.container-fluid{padding-left:0; padding-right:0;width:100%}
-button{padding-left:0; padding-right:0;}
-.logo {height: 3rem;}
-footer{width: 100%; height:4rem; text-align:right; position: sticky; background-color:$color-fondo;bottom:0px; color:white}
-section{padding-top: 5rem; padding-bottom: 3rem;}
-.footer__social-icons--size{width: 2.5rem; transition: transform .2s;}
-.footer__social-icons--size:hover{transform: scale(1.5)}
-.footer--padding{padding-right: .5rem;padding-left: .5rem;padding-top: .5rem;}
-.noticia__titulo--tamanio{font-size: 1.5rem;}
-.noticia__titulo--color{color: black}
-.noticia__texto--tamanio{font-size: 1.25rem;}
-.noticia__texto--color{color: black}
-.row__col--itemscentrados{text-align: -webkit-center;}
-.section__videoFrame--centrado{text-align: center;}
-table {margin-top: 1rem; margin-left: 2rem; padding: 3rem; }
+table {
+  border-style: map-get($estilos, border-style);
+  width: map-get($estilos, width);
+  margin: map-get($estilos, margin);
+  border-collapse: map-get($estilos, border-collapse)
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%
+}
+
+button {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.logo {
+  height: 3rem;
+}
+
+footer {
+  width: 100%;
+  height: 4rem;
+  text-align: right;
+  position: sticky;
+  background-color: $color-fondo;
+  bottom: 0px;
+  color: white
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.footer__social-icons--size {
+  width: 2.5rem;
+  transition: transform .2s;
+}
+
+.footer__social-icons--size:hover {
+  transform: scale(1.5)
+}
+
+.footer--padding {
+  padding-right: .5rem;
+  padding-left: .5rem;
+  padding-top: .5rem;
+}
+
+.noticia__titulo--tamanio {
+  font-size: 1.5rem;
+}
+
+.noticia__titulo--color {
+  color: black
+}
+
+.noticia__texto--tamanio {
+  font-size: 1.25rem;
+}
+
+.noticia__texto--color {
+  color: black
+}
+
+.row__col--itemscentrados {
+  text-align: -webkit-center;
+}
+
+.section__videoFrame--centrado {
+  text-align: center;
+}
+
+table {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding: 3rem;
+}
+
 /*headers de tablas */
-th {border-radius: 5px; border-color: grey; border-style: dotted; text-align: center; text-decoration: underline;}
+th {
+  border-radius: 5px;
+  border-color: grey;
+  border-style: dotted;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*celdas de tablas */
-td { border-radius: 5px; border-color: grey; border-style: dotted; text-align: center;}
+td {
+  border-radius: 5px;
+  border-color: grey;
+  border-style: dotted;
+  text-align: center;
+}
+
 /*lista ordenada dentro de tablas*/
-td ol { list-style: none; text-align: left;}
-nav ul li a {font-size: 1rem; text-align: center; position: relative; transition: transform .2s;}
-nav ul li a:hover {transform: scale(1.5);}
-.dropdown-item {text-align: center;}
-.navbar-expand-lg .navbar-nav .nav-link {padding-right: 1rem; padding-left: 1rem; }
+td ol {
+  list-style: none;
+  text-align: left;
+}
+
+nav ul li a {
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+  transition: transform .2s;
+}
+
+nav ul li a:hover {
+  transform: scale(1.5);
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.container {
+  background: #FFFFFF;
+  width: 900px;
+  height: 650px;
+  margin: 5% auto;
+  position: relative;
+}
+
+.container .map {
+  width: 45%;
+  float: left;
+}
+
+.container .contact-form {
+  width: 53%;
+  margin-left: 2%;
+  float: left;
+}
+
+.container .contact-form .title {
+  font-size: 2.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #242424;
+  margin: 5% 8%;
+}
+
+.container .contact-form .subtitle {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0 4% 5% 8%;
+}
+
+.container .contact-form input,
+.container .contact-form textarea {
+  width: 330px;
+  padding: 3%;
+  margin: 2% 8%;
+  color: #242424;
+  border: 1px solid #B7B7B7;
+}
+
+.container .contact-form input::placeholder,
+.container .contact-form textarea::placeholder {
+  color: #242424;
+}
+
+.container .contact-form .btn-send {
+  background: #A383C9;
+  width: 180px;
+  height: 60px;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 2% 8%;
+  border: none;
+}
+
 /* reseting
 * {
   margin: 0;
@@ -169,6 +324,7 @@ textarea {
 iframe {
   width: auto;
 }
+
 /*
 article {
   text-align: center;
