@@ -7340,7 +7340,7 @@ footer {
 
 section {
   padding-top: 5rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 6rem; }
 
 .footer__social-icons--size {
   width: 2.5rem;
@@ -7468,7 +7468,7 @@ nav ul li a:hover {
   border: none; }
 
 body {
-  color: #6F8BA4;
+  color: black;
   margin-top: 20px; }
 
 .section {
