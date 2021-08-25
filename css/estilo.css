@@ -470,8 +470,7 @@ pre {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin: 2%; }
 
 .no-gutters {
   margin-right: 0;
@@ -7313,6 +7312,7 @@ table {
   margin: 4rem;
   border-collapse: unset; }
 
+
 .container-fluid,
 .container-sm,
 .container-md,
@@ -7371,6 +7371,10 @@ section {
 
 .section__videoFrame--centrado {
   text-align: center; }
+
+.section__video--tamanio {
+  height: 400px;
+  width: 80%; }
 
 table {
   margin-top: 1rem;
