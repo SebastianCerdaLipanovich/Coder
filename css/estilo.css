@@ -7594,7 +7594,8 @@ textarea {
   align-content: center; }
 
 iframe {
-  width: auto; }
+  width: 80%;
+  height: 400px; }
 
 /*
 article {
