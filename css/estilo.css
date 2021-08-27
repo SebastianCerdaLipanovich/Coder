@@ -7309,7 +7309,6 @@ white {
 table {
   border-style: none;
   width: fit-content;
-  margin: 4rem;
   border-collapse: unset; }
 
 
@@ -7378,8 +7377,7 @@ section {
 
 table {
   margin-top: 1rem;
-  margin-left: 2rem;
-  padding: 3rem; }
+  margin-left: 2rem; }
 
 /*headers de tablas */
 th {
